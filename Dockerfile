@@ -9,6 +9,9 @@ RUN ls -als
 WORKDIR /app
 
 COPY . .
+RUN rm -rf node_modules/
+RUN npm cache verify
+RUN npm update
 RUN npm ci --omit=dev
 RUN --mount=type=secret,id=TEEM_KEY cp /run/secrets/TEEM_KEY .
 RUN chown -R node:node .
