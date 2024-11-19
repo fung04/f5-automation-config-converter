@@ -13,4 +13,4 @@ RUN --mount=type=secret,id=TEEM_KEY cp /run/secrets/TEEM_KEY .
 RUN chown -R node:node .
 
 USER node
-ENTRYPOINT [ "node", "init.js" ]
+ENTRYPOINT [ "node", "init.js" , "serve"]
