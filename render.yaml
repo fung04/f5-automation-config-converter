@@ -7,5 +7,5 @@ services:
     url: docker.io/f5devcentral/f5-automation-config-converter:1.24.0
   plan: free
   region: singapore
-  dockerCommand: ./init.js serve
+  dockerCommand: ./init.js serve -u node
 version: "1"
