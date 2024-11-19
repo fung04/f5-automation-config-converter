@@ -1,0 +1,10 @@
+# Exported from Render on 2024-11-19T02:20:21Z
+services:
+- type: web
+  name: f5-automation-config-converter:1.24.0
+  runtime: image
+  image:
+    url: docker.io/f5devcentral/f5-automation-config-converter:1.24.0
+  plan: free
+  region: singapore
+version: "1"
